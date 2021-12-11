@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms-lab</title>
+    </head>
+    <body>
+<!--heading-->
+        <h2>Lab-1</h2>
+        
+<!--Form starts-->
+        <form method="post" action="#" enctype="multipart/form-data">
+        
+<!--Filedset and legend-->
+        <fieldset style="width:350px;">
+
+        <legend>Form</legend><!--legend ends-->
+
+        <br>
+<!--Name field--> 
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="name"
+         required maxlength="25" size="10" >
+
+        <br> <br>
+<!--Email field-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email"
+         value="test@example.com" required size="10" autofocus>
+
+        <br><br>
+
+<!--Password field-->   
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required
+         minlength="6"  size="6.5">
+
+        <br><br>
+<!--Category Dropdown-->
+        <label for="category">Category:</label>
+        <select name="category" id="category" required >
+        <option value="student">Student</option>
+        <option value="emloyee">Employee</option>
+        <option value="freelancer" selected>Freelancer</option>
+        </select>
+
+        <br> <br>
+
+<!--Date field-->
+        <label for="date">Event date:</label>
+        <input id="date" name="date" type="date" required>
+        
+        <br><br>
+
+<!--Radio Button aka ticket-->
+        <label for="ticket">Tickets:</label>     
+        
+        <input type="radio" name="ticket" value="1ticket">1 ticket
+        <input type="radio" name="ticket" value="2ticket" checked>2 tickets
+        <input type="radio" name="ticket" value="3ticket">3 tickets
+
+        <br> <br>
+        
+        
+
+<!--Checkbox-->
+       <label for="onlinepayment">Online payment:</label>
+       <input type="checkbox" name="onlinepayment" id="onlinepayment" required>
+       
+       <br><br>
+
+<!--Text area aka notes--> 
+       <label for="textarea">Notes:</label>
+       <br>
+       <textarea id="textarea" placeholder="notes" rows="2" cols="20" name="Notes"></textarea>  
+       
+       <br><br>
+
+<!--Submit Button-->
+       <button>Submit</button>
+
+       </fieldset><!--fieldset ends-->
+       
+       </form>
+
+<!--Form Ends-->
+    </body>
+</html>
